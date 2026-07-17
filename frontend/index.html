@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BreachAlert — Know your exposure before someone else does</title>
+  <meta name="description" content="BreachAlert scans your email against known breaches, audits your password strength, and gives you one clear security score — free, in under 60 seconds.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="site-header__inner">
+      <a href="#" class="logo" aria-label="BreachAlert home">
+        <span class="logo__mark" aria-hidden="true"></span>
+        <span class="logo__text">Breach<span class="logo__accent">Alert</span></span>
+      </a>
+
+      <nav class="main-nav" aria-label="Main navigation" id="main-nav">
+        <ul class="main-nav__list">
+          <li><a href="#how-it-works">How it works</a></li>
+          <li><a href="#features">Features</a></li>
+          <li><a href="#trust">Why it matters</a></li>
+          <li><a href="#faq">FAQ</a></li>
+        </ul>
+      </nav>
+
+      <div class="site-header__actions">
+        <a href="#check" class="btn btn--primary btn--small">Check your score</a>
+        <button type="button" class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="main-nav" aria-label="Open navigation menu">
+          <span class="nav-toggle__bar"></span>
+          <span class="nav-toggle__bar"></span>
+          <span class="nav-toggle__bar"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- HERO -->
+    <section class="hero" aria-labelledby="hero-heading">
+      <div class="hero__inner">
+        <div class="hero__copy">
+          <p class="eyebrow">Free personal security scan</p>
+          <h1 id="hero-heading">
+            Know your exposure<br>before someone else does.
+          </h1>
+          <p class="hero__lede">
+            BreachAlert checks your email against known data breaches, audits your
+            password strength, and turns it all into one clear score — so you know
+            exactly what to fix, and why.
+          </p>
+          <div class="hero__actions">
+            <a href="#check" class="btn btn--primary">Check your score — it's free</a>
+            <a href="#how-it-works" class="btn btn--ghost">See how it works</a>
+          </div>
+          <p class="hero__note">No password required to scan. No data sold. Ever.</p>
+        </div>
+
+        <div class="hero__visual" role="img" aria-label="Sample security scan result showing a score of 72 out of 100, with a breach found on one account, a weak password flagged, and two-factor authentication enabled.">
+          <div class="scan-card">
+            <div class="scan-card__header">
+              <span class="scan-card__label">Live scan result</span>
+              <span class="scan-card__pulse" aria-hidden="true"></span>
+            </div>
+
+            <div class="scan-card__gauge">
+              <div class="gauge" style="--gauge-value: 72;">
+                <div class="gauge__ring">
+                  <div class="gauge__inner">
+                    <span class="gauge__score">72</span>
+                    <span class="gauge__of">/100</span>
+                  </div>
+                </div>
+              </div>
+              <p class="scan-card__gauge-label">Security score</p>
+            </div>
+
+            <ul class="scan-card__rows">
+              <li class="scan-row scan-row--alert">
+                <span class="scan-row__dot" aria-hidden="true"></span>
+                <span class="scan-row__text">Breach found — 1 account exposed</span>
+                <span class="scan-row__tag">Fix now</span>
+              </li>
+              <li class="scan-row scan-row--warn">
+                <span class="scan-row__dot" aria-hidden="true"></span>
+                <span class="scan-row__text">Weak password detected</span>
+                <span class="scan-row__tag">Review</span>
+              </li>
+              <li class="scan-row scan-row--safe">
+                <span class="scan-row__dot" aria-hidden="true"></span>
+                <span class="scan-row__text">Two-factor authentication on</span>
+                <span class="scan-row__tag">Good</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- STATS STRIP -->
+    <section class="stats" aria-label="BreachAlert usage statistics">
+      <div class="section-inner stats__inner">
+        <div class="stat">
+          <span class="stat__number">2.4M+</span>
+          <span class="stat__label">Emails scanned</span>
+        </div>
+        <div class="stat">
+          <span class="stat__number">18,900</span>
+          <span class="stat__label">Breaches flagged this month</span>
+        </div>
+        <div class="stat">
+          <span class="stat__number">100%</span>
+          <span class="stat__label">Free, no account required</span>
+        </div>
+        <div class="stat">
+          <span class="stat__number">0</span>
+          <span class="stat__label">Passwords ever stored</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- HOW IT WORKS -->
+    <section class="how" id="how-it-works" aria-labelledby="how-heading">
+      <div class="section-inner">
+        <p class="eyebrow eyebrow--center">The process</p>
+        <h2 id="how-heading">Three steps. Sixty seconds. One clear answer.</h2>
+
+        <ol class="steps">
+          <li class="step">
+            <span class="step__number">01</span>
+            <h3 class="step__title">Scan</h3>
+            <p class="step__text">
+              Enter your email. BreachAlert checks it against known breach
+              databases and audits any passwords you choose to test — locally,
+              never stored in plain text.
+            </p>
+          </li>
+          <li class="step">
+            <span class="step__number">02</span>
+            <h3 class="step__title">Score</h3>
+            <p class="step__text">
+              We turn the results into a single score out of 100, weighted by
+              real risk — an old breach on an unused account counts less than
+              an exposed password you still use today.
+            </p>
+          </li>
+          <li class="step">
+            <span class="step__number">03</span>
+            <h3 class="step__title">Fix</h3>
+            <p class="step__text">
+              Get a short, ranked list of what to change first. Come back
+              anytime to re-scan and watch your score improve.
+            </p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- FEATURES -->
+    <section class="features" id="features" aria-labelledby="features-heading">
+      <div class="section-inner">
+        <p class="eyebrow eyebrow--center">What's under the hood</p>
+        <h2 id="features-heading">Everything you need to see your risk clearly</h2>
+
+        <div class="feature-grid">
+          <article class="feature-card">
+            <div class="feature-card__icon feature-card__icon--breach" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 2 3 7v6c0 5 4 8 9 9 5-1 9-4 9-9V7l-9-5Z"/><path d="M9 12l2 2 4-4"/></svg>
+            </div>
+            <h3>Breach detection</h3>
+            <p>Cross-checks your email against public breach records so you find out from us, not from a stranger using your password.</p>
+          </article>
+
+          <article class="feature-card">
+            <div class="feature-card__icon feature-card__icon--password" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="4" y="10" width="16" height="10" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/></svg>
+            </div>
+            <h3>Password strength audit</h3>
+            <p>Tests real entropy and known-weak patterns — not just "add a number and a symbol" checkbox rules.</p>
+          </article>
+
+          <article class="feature-card">
+            <div class="feature-card__icon feature-card__icon--score" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 17l6-6 4 4 8-8"/><path d="M17 7h4v4"/></svg>
+            </div>
+            <h3>One score, tracked over time</h3>
+            <p>Re-scan anytime and see your score move — a plain number that turns "am I safe?" into something you can actually measure.</p>
+          </article>
+
+          <article class="feature-card">
+            <div class="feature-card__icon feature-card__icon--alert" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 3v10"/><circle cx="12" cy="18" r="1.2" fill="currentColor" stroke="none"/><path d="M4 21h16L12 4 4 21Z"/></svg>
+            </div>
+            <h3>New breach alerts</h3>
+            <p>If your email shows up in a new breach after your scan, you'll hear it from us before it becomes a problem.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- WHY IT MATTERS -->
+    <section class="trust" id="trust" aria-labelledby="trust-heading">
+      <div class="section-inner section-inner--narrow">
+        <p class="eyebrow eyebrow--center">Why it matters</p>
+        <h2 id="trust-heading">Most breaches don't start with hacking. They start with reuse.</h2>
+        <p class="trust__text">
+          A single reused password on one forgotten account is often the only
+          thing standing between a stranger and your inbox, your bank, and
+          everything connected to them. BreachAlert exists because most
+          people don't find out they're exposed until it's too late — and
+          because knowing your risk shouldn't require a computer science
+          degree or a monthly subscription.
+        </p>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="faq" id="faq" aria-labelledby="faq-heading">
+      <div class="section-inner section-inner--narrow">
+        <p class="eyebrow eyebrow--center">Good questions</p>
+        <h2 id="faq-heading">Frequently asked questions</h2>
+
+        <div class="faq-list">
+          <details class="faq-item">
+            <summary>Do you ever see or store my password?</summary>
+            <p>No. Password strength is checked entirely in your browser before anything is sent anywhere. The password itself never leaves your device — only the resulting strength score does.</p>
+          </details>
+
+          <details class="faq-item">
+            <summary>How do you check for breaches without storing my email?</summary>
+            <p>Your email is checked against breach records using a one-way hash, not the plain address. We don't keep a log of what you searched once the scan finishes, unless you choose to save your score.</p>
+          </details>
+
+          <details class="faq-item">
+            <summary>Is BreachAlert really free?</summary>
+            <p>Yes. Scanning, scoring, and one-time breach checks are free with no account required. Saving your history and getting ongoing alerts needs a free account, but there's no paid tier hidden behind a paywall.</p>
+          </details>
+
+          <details class="faq-item">
+            <summary>What do I do if I find a breach?</summary>
+            <p>Your results page ranks fixes by urgency — usually: change the exposed password, turn on two-factor authentication, and stop reusing that password anywhere else. We link you straight to the account settings page where you can do it.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta" id="check" aria-labelledby="cta-heading">
+      <div class="section-inner section-inner--narrow cta__inner">
+        <h2 id="cta-heading">Check your score in under 60 seconds</h2>
+        <p class="cta__text">Free, private, and no password ever leaves your device unencrypted.</p>
+        <form class="cta__form" id="scan-form" action="#" method="post" novalidate>
+          <div class="cta__field">
+            <label class="visually-hidden" for="email-input">Email address</label>
+            <input
+              class="cta__input"
+              type="email"
+              id="email-input"
+              name="email"
+              placeholder="you@example.com"
+              autocomplete="email"
+              aria-describedby="email-hint email-error"
+              required>
+            <p id="email-hint" class="cta__hint">We'll only use this to run the scan — never to send marketing.</p>
+            <p id="email-error" class="cta__error" role="alert" hidden></p>
+          </div>
+          <button class="btn btn--primary" type="submit" id="scan-submit">
+            <span class="btn__label">Scan now</span>
+          </button>
+        </form>
+        <p class="cta__status" id="scan-status" role="status" aria-live="polite"></p>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="site-footer__inner">
+      <div class="site-footer__brand">
+        <span class="logo__text">Breach<span class="logo__accent">Alert</span></span>
+        <p>Built to make personal security measurable.</p>
+      </div>
+
+      <nav class="site-footer__links" aria-label="Footer navigation">
+        <div class="site-footer__col">
+          <h3>Product</h3>
+          <ul>
+            <li><a href="#how-it-works">How it works</a></li>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#check">Check your score</a></li>
+          </ul>
+        </div>
+        <div class="site-footer__col">
+          <h3>Company</h3>
+          <ul>
+            <li><a href="#trust">Why it matters</a></li>
+            <li><a href="mailto:hello@breachalert.app">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+    <div class="site-footer__bottom">
+      <p>&copy; 2026 BreachAlert. Built as part of a full-stack internship project.</p>
+    </div>
+  </footer>
+
+  <button type="button" class="back-to-top" id="back-to-top" aria-label="Back to top">
+    <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+  </button>
+
+  <script src="script.js"></script>
+</body>
+</html>
